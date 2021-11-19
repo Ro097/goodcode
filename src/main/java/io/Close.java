@@ -12,7 +12,7 @@ public class Close {
     public static void main(String[] args) {
         FileInputStream in = null;
         try {
-            in = new FileInputStream(new File("D:\\bigdata\\0.luojun\\2.workspaces\\goodcode\\input\\io_test.txt"));
+            in = new FileInputStream(new File("input\\io_test.txt"));
             byte[] bytes = new byte[1024];
             int line =0;
 

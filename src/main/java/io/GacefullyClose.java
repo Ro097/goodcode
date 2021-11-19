@@ -18,7 +18,7 @@ public class GacefullyClose {
         java.lang.AutoCloseable接口（其中它包括实习了java.io.Closeable的所有对象）
          */
 
-        try (FileInputStream in = new FileInputStream(new File("D:\\bigdata\\0.luojun\\2.workspaces\\goodcode\\input\\io_test.txt"))){
+        try (FileInputStream in = new FileInputStream(new File("input"+ File.separator+"io_test.txt"))){
             byte[] b = new byte[1025];
             int line = 0;
             while ((line = in.read(b)) != -1) {
